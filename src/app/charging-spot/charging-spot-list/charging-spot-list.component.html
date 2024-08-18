@@ -1,0 +1,33 @@
+<!-- <p>charging-spot-list works!</p>
+
+<h2>Charging Spots</h2>
+<ul>
+  <li *ngFor="let spot of chargingSpots">
+    {{ spot.location }} - {{ spot.brand }}
+  </li>
+</ul> -->
+
+<div class="charging-spot-list">
+  <h1>Charging Spot List</h1>
+  
+  <table>
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Location</th>
+        <th>Brand</th>
+        <th>Available</th>
+        <th>Price Per Hour</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let spot of chargingSpots">
+        <td>{{ spot.id }}</td>
+        <td>{{ spot.location }}</td>
+        <td>{{ spot.brand }}</td>
+        <td>{{ spot.available }}</td>
+        <td>{{ spot.pricePerHour }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

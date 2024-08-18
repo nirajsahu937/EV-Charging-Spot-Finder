@@ -1,0 +1,36 @@
+<!-- <p>charging-spot-detail works!</p>
+
+<h2>Charging Spot Details</h2>
+<div *ngIf="chargingSpot">
+  <p>Location: {{ chargingSpot.location }}</p>
+  <p>Brand: {{ chargingSpot.brand }}</p>
+  <p>Price Per Hour: {{ chargingSpot.pricePerHour }}</p>
+</div> -->
+
+<div class="charging-spot-register">
+  <h1>Register Charging Spot</h1>
+  
+  <form (ngSubmit)="registerChargingSpot()">
+    <label>
+      Location:
+      <input type="text" [(ngModel)]="chargingSpot.location" name="location" required>
+    </label>
+    
+    <label>
+      Brand:
+      <input type="text" [(ngModel)]="chargingSpot.brand" name="brand" required>
+    </label>
+    
+    <label>
+      Available:
+      <input type="checkbox" [(ngModel)]="chargingSpot.available" name="available">
+    </label>
+    
+    <label>
+      Price Per Hour:
+      <input type="number" [(ngModel)]="chargingSpot.pricePerHour" name="pricePerHour" required>
+    </label>
+    
+    <button type="submit">Register</button>
+  </form>
+</div>
