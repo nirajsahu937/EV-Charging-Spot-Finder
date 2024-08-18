@@ -1,5 +1,5 @@
 # EV Charging Spot Finder
-EV Charging Spot Finder This repository contains the backend code for the EV Charging Spot Finder project. The frontend is currently under development and will be added soon
+EV Charging Spot Finder This repository contains the backend code for the EV Charging Spot Finder project. The frontend is currently under development and will be added soon.     
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.1.4.
 
 ## Development server
